@@ -16,7 +16,25 @@ class FlutterYSApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Placeholder(),
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.red,
+          title: Text('Flutter YS App'),
+        ),
+        body: Container(
+          color: Colors.red,
+          child: Center(
+            child: Text(
+              'Flutter',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 100,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
